@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+/* Common */
+html {
+    font-size:100%;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0px;
+    margin: 0px;
+    min-height:100vh;
+    background-color:#DCDCDC;
+
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Main Header  - start */
+header.main-header {
+    color:white;
+    background-color:#24252A;
+    align-items: center;
+    padding: 10px 10px;
+}
+
+.main-header{
+    display:flex;
+    justify-content: space-between;
+}
+
+/* Title - start */
+.title {
+    display:flex;
+}
+img.logo {
+    width:100px;
+    background-color:#ffffff;
+    border-radius: 6px;
+    cursor:pointer;
+}
+.title span {
+    padding: 0px 10px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 3rem;
+}
+/* Title - end */
+
+/* Menu - start */
+nav.menu ul li {
+    display:inline-block;
+    padding: 0px 20px;
+}
+
+nav.menu ul li a{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+nav.menu ul li a:hover {
+    color:orange;
+    transition: all 0.3s ease 0s;
+}
+/* Menu - end */
+/* Main Header  - end */
+
+/* Section - start */
+main section {
+    margin: 30px 10%;
+}
+/* Section - end */
+
+/* Article Header - start */
+article {
+    overflow: hidden;
+}
+
+article header {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+article aside {
+    width: 30%;
+    float: right;
+    text-align: center;
+
+}
+article img {
+    width:200px;
+}
+
+article p {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0rem;
+}
+/* Article Header - end  */
+
+
+/* Footer - start  */
+footer {
+    background-color:silver;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0rem;
+    text-align: center;
+    padding: 5px 0px;
+}
+
+/* Footer - end  */
+
+
+/* 404 error page - start */
+body.error404 {
+    background-image: url("../assets/images/51285701074_1fcd43dd11_k-1024x643.jpg");
+    color: #DCDCDC;
+}
+
+body.error404 main {
+    margin:10vw;
+}
+
+body.error404 main h1 {
+    font-family: 'Gothic', Arial, sans-serif;
+}
+
+body.error404 main p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body.error404 main a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    background-color:black;
+    text-decoration:none;
+    color:orange;
+    padding:5px 15px;
+    border: #DCDCDC 1px solid;
+    border-radius: 10px;
+}
+/* 404 error page - end */
