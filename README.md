@@ -10,7 +10,7 @@
 
   
 ### Reflection
-> There were many technical issues and I found solutions through googling and MDN Docs and testing in codepen.io.
+> There were many technical issues and I found the solutions through googling and MDN Docs and testing in codepen.io.
 
 ### Attributions for code or assets that are not your own
 
