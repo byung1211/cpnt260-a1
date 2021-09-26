@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 /* Common style -  start */
-html {
-  font-size:100%;
+
+*, *:before, *:after {
   box-sizing: border-box;
 }
+
 body {
   padding: 0px;
   margin: 0px;
@@ -132,12 +133,13 @@ footer {
 
 /* 404 error page - start */
 body.error404 {
-  background-image: url("../assets/images/51285701074_1fcd43dd11_k-1024x643.jpg");
+  background: no-repeat url("../assets/images/51285701074_1fcd43dd11_k-1024x643.jpg");
+  background-size:cover;
   color: #DCDCDC;
 }
 
 body.error404 main {
-  margin:10vw;
+  margin:12vw 30vw;
 }
 body.error404 main h1 {
   font-family: 'Gothic', Arial, sans-serif;
