@@ -1,20 +1,42 @@
+/**
+*  Description: This is CSS style file for the personal assignment.
+*  Created Date: 2021.09.19
+*  Created by: Byung Uk An
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-/* Common style -  start */
+/****************************************************************************/
+/*********                 Common Styles                            *********/
+/****************************************************************************/
 
+/* Common style -  start */
 *, *:before, *:after {
   box-sizing: border-box;
 }
-
 body {
   padding: 0px;
   margin: 0px;
   min-height:100vh;
   background-color:#DCDCDC;
 }
-/* Common style -  start */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Gothic', Arial, sans-serif;
+}
+p {
+  font-family: 'Montserrat', Arial, sans-serif;
+}
+li {
+  font-family: Arial, sans-serif;
+}  
+/* Common style -  end */
 
-/* Main Header (Logo, Title, Navigation)  - start */
+
+/****************************************************************************/
+/*********          Navigation & Footer Styles for All pages        *********/
+/****************************************************************************/
+
+/* Main Header (Logo, Title, Navigation) shared by all pages  - start */
 @media screen and (max-width: 400px) {
   .title span {
     display:none;
@@ -55,7 +77,6 @@ body {
   align-items: center;
   display:flex;
   justify-content: space-between;
-  font-family:'Montserrat', sans-serif;
   font-size: 2.5rem;
   padding: 10px 15px 0px 20px;
 }
@@ -91,7 +112,6 @@ nav.menu ul {
   display:flex;
   flex-wrap:wrap;
   justify-content: start;
-  font-family:'Montserrat', sans-serif;
   font-size: 1.5rem;
   margin: 0px 0px;
 }
@@ -110,28 +130,35 @@ nav.menu ul li a:hover {
   transition: all 0.3s ease 0s;
 }
 /* Menu - end */
-/* Main Header  - end */
+/* Main Header shared by all pages  - end */
 
-/* Section - start */
-main {
+
+/* Footer shared by all pages - start */
+footer {
+  background-color:silver;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.0rem;
+  text-align: center;
+  padding: 5px 0px;
+  margin-top:50px;
+}
+/* Footer shared by all pages  - end */
+
+
+/****************************************************************************/
+/*********                 Custom Styles for Eash Page              *********/
+/****************************************************************************/
+
+/* Home page - start */
+main.home {
   margin: 30px 10%;
 }
-/* Section - end */
-
-.top-header {
+main.home header {
   text-align: center;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
-
-/* Article Header - start */
 article {
   margin-top: 10px;
 }
-
-article header {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-
 article aside {
   width: 30%;
   padding: 25px;
@@ -142,24 +169,21 @@ aside img {
   width: 100%;
   height: 100%;
 }
-
 article p {
   font-family:Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.0rem;
 }
-/* Article Header - end  */
+/* Home page - end */
 
 
-/* Footer - start  */
-footer {
-  background-color:silver;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.0rem;
-  text-align: center;
-  padding: 5px 0px;
+/* About page - start */
+main.about {
+  margin: 30px 10%;
 }
-
-/* Footer - end  */
+main.about header {
+  text-align: center;
+}
+/* About page - end */
 
 
 /* 404 error page - start */
@@ -190,9 +214,13 @@ body.error404 main a {
 }
 /* 404 error page - end */
 
+
 /* Contact page - start */
+main.contact{
+  text-align: center;
+}
 form {
-    margin: 0 auto;
+    margin: auto;
     padding: 30px 20px;
     max-width: 400px;
     border: 2px solid black;
@@ -201,6 +229,7 @@ form {
 fieldset {
   border: 0;
   line-height:2.5em;
+  text-align: left;
 }
 legend {
   font-family: sans-serif;
@@ -239,6 +268,7 @@ button.button {
 }
 /* Contact page - end */
 
+
 /* Services page - start */
 @supports (display: grid) {
   section.service-list { 
@@ -258,17 +288,32 @@ main.services {
 section.service-list {
   max-width: 500px;
   margin: 0 auto;
-  padding:0px 20px 20px 20px;
+  padding:0px 50px;
 }
-
 article.service-item {
   display: flex;
   flex-flow: column;
   border:  1px solid black;
   border-radius: 1rem;
-  padding: 2rem;
+  padding: 1em 1rem 1rem 1rem;
+  background-color: #ffffff;
 }
-
 article.service-item img {
   width: 100%;
 }
+article.service-item p {
+  margin: 5px 5px;
+}
+article.service-item ul {
+  text-align: left;
+  margin-left: 30px;
+}
+article.service-item button {
+  width: 100%;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px 2px rgba(0,0,0,0.3);
+}
+article.service-item button:hover {
+  font-weight: 600;
+}
+/* Services page - end */
