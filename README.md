@@ -5,8 +5,8 @@
   - **Github Pages Site:** https://byung1211.github.io/cpnt260-a1/index.html
   
 ### Client information
-  - **Who is your client:** someone who loves cat  
-  - **What do they do:** they do look around cat pictures and share information and ideas for cat
+  - **Who is your client:** Someone who loves cat and needs help or care services.
+  - **What do they do:** They can look around cat photos and share information and ideas for cat. Also, they can book online for cat care services their cats need.
 
 ### Attributions for code or assets that are not your own
 
