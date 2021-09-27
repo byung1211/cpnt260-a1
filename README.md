@@ -18,3 +18,9 @@
 from https://flyclipart.com
 - **pexels-evg-culture-1170986.jpg and more** from https://pixels.com
 - **51285701074_1fcd43dd11_k-1024x643.jpg** from https://ottawahumane.ca/the-cat-killer-that-never-was/
+- **Image links on the services page** from https://www.dreamstime.com
+
+### Code Review
+- 2021.09.26
+	
+	Using the media query property to make my menu responsive, it didn't work properly with the display property. Later, I could solve the problem with !important option. FYI, my browser was Chrome and I moved to FF Dev Edition. Chrome inspector tool wasn't accurate as I expected. As I have multiple pages, I have felt I need to organize CSS class names and the structure for maintain purposes. so I spent some time doing that. 
