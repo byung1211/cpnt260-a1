@@ -238,3 +238,37 @@ button.button {
   margin-top: -5px;
 }
 /* Contact page - end */
+
+/* Services page - start */
+@supports (display: grid) {
+  section.service-list { 
+    max-width: 10000px !important;
+    margin: 0 !important;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+  }
+  article.service-item {
+    margin: 0;
+  }
+}
+main.services {
+  text-align: center;
+}
+section.service-list {
+  max-width: 500px;
+  margin: 0 auto;
+  padding:0px 20px 20px 20px;
+}
+
+article.service-item {
+  display: flex;
+  flex-flow: column;
+  border:  1px solid black;
+  border-radius: 1rem;
+  padding: 2rem;
+}
+
+article.service-item img {
+  width: 100%;
+}
